@@ -1,0 +1,201 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Data\\Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Database\\Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Database\\Database.csproj",
+        "projectName": "Database",
+        "projectPath": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Database\\Database.csproj",
+        "packagesPath": "C:\\Users\\Fizy.pk\\.nuget\\packages\\",
+        "outputPath": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Fizy.pk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Models\\Models.csproj": {
+                "projectPath": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Fizy.pk\\.nuget\\packages\\",
+        "outputPath": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Fizy.pk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Database\\Database.csproj": {
+                "projectPath": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Database\\Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Models\\Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Models\\Models.csproj",
+        "projectName": "Models",
+        "projectPath": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\Fizy.pk\\.nuget\\packages\\",
+        "outputPath": "C:\\Raiden Hanzo\\Workspace\\Practice\\Invertory System\\Inventory Management System\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Fizy.pk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
