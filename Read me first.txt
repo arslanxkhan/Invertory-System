@@ -1,0 +1,8 @@
+node version => 18.18.2
+Angular => 16.2.0
+.Net core => 7
+
+
+Angular
+just install node modules 
+
