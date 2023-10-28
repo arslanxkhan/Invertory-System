@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="alert alert-danger" role="alert">
+    We will record sales when customers purchase products
+  </div>
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Customer Email</th>
+          <th scope="col">Product</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="sales.length">
+          <tr *ngFor="let item of sales">
+            <th scope="row">{{ item?.id }}</th>
+            <td>{{ item?.customerName }}</td>
+            <td>{{ item?.customerEmail }}</td>
+            <td>{{ item?.products?.name }}</td>
+            <td>{{ item?.quantity }}</td>
+            <td>{{ item?.totalPrice }}</td>
+          </tr>
+        </ng-container>
+
+        <ng-container *ngIf="!sales.length">
+          <tr>
+            <th class="text-center" colspan="6">No Recodes Found!</th>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>

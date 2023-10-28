@@ -1,0 +1,74 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{title}}</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss()"
+  ></button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="productForm">
+    <div class="my-4">
+      <label> Name: </label>
+
+      <input
+        formControlName="name"
+        class="form-control"
+        type="text"
+        placeholder="Your name"
+        [(ngModel)]="product.name"
+      />
+      <div
+        class="text-red"
+        *ngIf="
+          productForm.get('name')?.hasError('required') &&
+          (productForm.get('name')?.dirty || productForm.get('name')?.touched)
+        "
+      >
+        Please provide a name.
+      </div>
+    </div>
+    <div class="my-4">
+      <label> Description: </label>
+      <input
+        formControlName="description"
+        type="text"
+        class="form-control"
+        placeholder="Product description"
+        [(ngModel)]="product.description"
+      />
+
+      <div
+        class="text-red"
+        *ngIf="
+          productForm.get('description')?.hasError('required') &&
+          (productForm.get('description')?.dirty || productForm.get('description')?.touched)
+        "
+      >
+        Please provide a description.
+      </div>
+    </div>
+   
+  </form>
+</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-outline-dark"
+    (click)="submit()"
+    [disabled]="productForm.invalid"
+    *ngIf="!isDetails"
+  >
+    {{SaveBtnText}}
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-outline-dark"
+    (click)="activeModal.dismiss()"
+    *ngIf="isDetails"
+  >
+    Close
+  </button>
+</div>

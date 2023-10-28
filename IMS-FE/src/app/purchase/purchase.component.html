@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="text-end my-3">
+    <button type="button" class="btn btn-primary" (click)="openDialog()">
+      Add Purchase
+    </button>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Supplier Name</th>
+          <th scope="col">Supplier Number</th>
+          <th scope="col">Product</th>
+          <th scope="col">Delivery Date</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="purchases.length">
+          <tr *ngFor="let item of purchases">
+            <th scope="row">{{ item?.id }}</th>
+            <td>{{ item?.supplierName }}</td>
+            <td>{{ item?.supplierNumber }}</td>
+            <td>{{ item?.products?.name }}</td>
+            <td>{{ item?.deliveryDate }}</td>
+            <td>{{ item?.quantity }}</td>
+          </tr>
+        </ng-container>
+
+        <ng-container *ngIf="!purchases.length">
+          <tr>
+            <th class="text-center" colspan="6">No Recodes Found!</th>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>

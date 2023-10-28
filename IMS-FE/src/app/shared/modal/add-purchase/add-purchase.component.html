@@ -1,0 +1,133 @@
+<div class="modal-header">
+  <h4 class="modal-title">Add Purchase</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss()"
+  ></button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="purchaseForm">
+    <div class="my-4">
+      <label>Supplier Name: </label>
+
+      <input
+        formControlName="supplierName"
+        class="form-control"
+        type="text"
+        [(ngModel)]="purchase.supplierName"
+      />
+      <div
+        class="text-red"
+        *ngIf="
+          purchaseForm.get('supplierName')?.invalid &&
+          (purchaseForm.get('supplierName')?.dirty ||
+            purchaseForm.get('supplierName')?.touched)
+        "
+      >
+        Please provide a supplier name.
+      </div>
+    </div>
+    <div class="my-4">
+      <label> Supplier Number: </label>
+      <input
+        formControlName="supplierNumber"
+        type="text"
+        class="form-control"
+        [(ngModel)]="purchase.supplierNumber"
+      />
+      <div
+        class="text-red"
+        *ngIf="
+          purchaseForm.get('supplierNumber')?.invalid &&
+          (purchaseForm.get('supplierNumber')?.dirty ||
+            purchaseForm.get('supplierNumber')?.touched)
+        "
+      >
+        Please provide a supplier number.
+      </div>
+    </div>
+
+
+
+    <div class="my-4">
+      <label> Delivery Date: </label>
+      <input
+        formControlName="deliveryDate"
+        type="datetime-local"
+        class="form-control"
+        [(ngModel)]="purchase.deliveryDate"
+      />
+      <div
+        class="text-red"
+        *ngIf="
+          purchaseForm.get('deliveryDate')?.invalid &&
+          (purchaseForm.get('deliveryDate')?.dirty ||
+            purchaseForm.get('deliveryDate')?.touched)
+        "
+      >
+        Please provide a delivery date.
+      </div>
+    </div>
+
+
+
+
+    <div class="my-4">
+      <label> Products: </label>
+
+      <select
+        class="form-select"
+        formControlName="productId"
+        [(ngModel)]="purchase.productId"
+      >
+        <option selected>Please select product</option>
+        <option [value]="item.id" *ngFor="let item of products">
+          {{ item.name }}
+        </option>
+      </select>
+
+      <div
+        class="text-red"
+        *ngIf="
+          purchaseForm.get('productId')?.invalid &&
+          (purchaseForm.get('productId')?.dirty ||
+            purchaseForm.get('productId')?.touched)
+        "
+      >
+        Select product
+      </div>
+    </div>
+
+    <div class="my-4">
+      <label> Quantity: </label>
+      <input
+        class="form-control"
+        formControlName="quantity"
+        type="number"
+        [(ngModel)]="purchase.quantity"
+      />
+      <div
+        class="text-red"
+        *ngIf="
+          purchaseForm.get('quantity')?.invalid &&
+          (purchaseForm.get('quantity')?.dirty ||
+            purchaseForm.get('quantity')?.touched)
+        "
+      >
+        Quantity must be greater than 0
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-outline-dark"
+    (click)="submit()"
+    [disabled]="purchaseForm.invalid"
+  >
+    Save
+  </button>
+</div>
