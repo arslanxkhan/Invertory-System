@@ -6,3 +6,20 @@ Angular => 16.2.0
 Angular
 just install node modules 
 
+your user or phone number has been blocked from sending messages. If you believe this is a mistake, please contact us.
+
+
+
+Hi,
+I want to create an account, after a few steps, when I add a phone number it gives me the error message 
+your user or phone number has been blocked from sending messages. If you believe this is a mistake, please contact us.
+
+so help me to get out of this issue
+
+
+
+
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2FmZTNjNDUtOTc1MS00M2JjLWE5NTMtMmM5ODUxOTZiYTkz%40thread.v2/0?context=%7b%22Tid%22%3a%22e7dbbbe3-160e-4c17-a05a-f4fc95c35f60%22%2c%22Oid%22%3a%226726c017-d8ea-4d2f-824d-2fb7f8b514d0%22%7d
+
+
+
